@@ -1,0 +1,51 @@
+<div class="col-6">
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" id="floatingInput" value="{{this.author}}" placeholder="Author" name="author">
+    <label for="floatingInput">Author</label>
+  </div>
+</div>
+<div class="col-12">
+  <div class="form-floating mb-3">
+    <textarea class="form-control" placeholder="Manuscript content" id="content" name="content" style="height: 200px">{{this.content}}</textarea>
+    <label for="floatingInput">Content</label>
+  </div>
+</div>
+<div class="col-6">
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" id="floatingInput" value="{{this.point}}" placeholder="6.5" name="point">
+    <label for="floatingInput">Points</label>
+  </div>
+</div>
+<div class="col-6">
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" id="floatingInput" value="{{this.reviewer}}" placeholder="John Doe" name="reviewer">
+    <label for="floatingInpu">Reviewer</label>
+  </div>
+</div>
+<div class="col-6">
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" id="floatingInput" value="{{this.status}}" placeholder="Pending/Paid" name="status">
+    <label for="floatingInpu">Status</label>
+  </div>
+</div>
+<div class="col-6">
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" id="floatingInput" value="{{this.title}}" placeholder="Title" name="title">
+    <label for="floatingInpu">Title</label>
+  </div>
+</div>
+<div class="col-6">
+  <div class="form-floating mb-3">
+
+    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+      <option selected>Open this select menu</option>
+      <option value="{{this.topic}}">Science</option>
+      <option value="{{this.topic}}">Psychology</option>
+      <option value="{{this.topic}}">Politics</option>
+    </select>
+    <label for="floatingSelect">Works with selects</label>
+  </div>
+</div>
+<div class="col-12 d-grid">
+  <button class="btn btn-primary" type="submit">Submit</button>
+</div>

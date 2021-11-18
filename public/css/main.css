@@ -1,0 +1,43 @@
+/* No CSS *//*# sourceMappingURL=main.css.map */
+.mainWrapper{
+    width:840px;
+    height:820px;
+    background:white;
+    margin-left:auto;
+    margin-right:auto;
+    position:relative;
+    left:0px;
+}
+#cc1{
+    position:absolute;
+    /*background: #004c4c;linear-gradient(to top, #004c4c 80%, #006064 80%, #006064 100%);*/
+    margin-top:0px;
+    margin-left:0px;
+    width:840px;
+    height:240px;
+}
+#cc2{
+    position:absolute;
+    background:white;
+    margin-top:240px;
+    margin-left:0px;
+    width:340px;
+    height:350px;
+}
+#cc3{
+    position:absolute;
+    background:white;
+    margin-top:240px;
+    margin-left:340px;
+    width:500px;
+    height:350px;
+}
+#cc4{
+    position:absolute;
+    background:white;
+    margin-top:590px;
+    margin-left:0px;
+    width:825px;
+    height:280px;
+}
+/* CSS used here will be applied after bootstrap.css */

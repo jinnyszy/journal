@@ -1,0 +1,43 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/home">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">View Manuscript</li>
+  </ol>
+</nav>
+
+<div class="view-user p-5">
+  {{#each rows}}
+  <div class="row mb-5">
+    <div class="col text-center">
+      <h3>Submission {{this.ID}}</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Author</th>
+            <th scope="col">Topic</th>
+            <th scope="col">Title</th>
+            <th scope="col">Content</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">{{this.author}}</th>
+            <td>{{this.topic}}</td>
+            <td>{{this.title}}</td>
+            <td>{{this.content}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="row">
+      <div class="col">
+        <b>Comments</b>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</div>

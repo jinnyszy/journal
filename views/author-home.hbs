@@ -1,0 +1,57 @@
+{{#if removedUser}}
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  User has been removed.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{{/if}}
+<div class="alert alert-success alert-dismissible" role="alert">
+  Your bill is due
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<div class="card">
+  <div class="card-header">
+   Dashboard <b>Author</b>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Welcome</h5>
+    <p class="card-text">You have successfully login</p>
+    <a href="/logout" class="btn btn-primary">Logout</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-6">
+    <h1>Manuscripts</h1>
+  </div>
+  <div class="col-6 d-flex justify-content-end">
+    <a href="/authorSubmit" type="button" class="btn btn-primary align-self-center">+ add manuscripts</a>
+  </div>
+</div>
+
+<table class="table table-bordered">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Title</th>
+      <th scope="col">Content</th>
+      <th scope="col">Status</th>
+      <th scope="col" class="text-end">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    {{#each rows}}
+    <tr>
+      <td>{{this.ID}}</td>
+      <td>{{this.title}}</td>
+      <td>{{this.content}}</td>
+      <td>{{this.status}}</td>
+      <td class="text-end">
+        <a href="/viewMan/{{this.ID}}" type="button" class="btn btn-light btn-small"><i class="bi bi-eye"></i>View</a>
+        <a href="/billing" type="button" class="btn btn-light btn-small"><i class="bi bi-cash"></i>Pay now</a>
+      </td>
+    </tr>
+    {{/each}}
+
+  </tbody>
+</table>
